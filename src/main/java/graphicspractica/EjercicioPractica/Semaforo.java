@@ -56,7 +56,7 @@ public class Semaforo {
 
     private void createUIComponents() {
         PanelSemaforo = new PanelSemaforo();
-    }
+    } //AQUI ES DONDE EL DIBUJO ENTRA AL FORMULARIO Y SE ACTIVA DANDOLE CUSTOM CREATE EN EL FORMULARIO
 
     public static void main(String[] args){
 
