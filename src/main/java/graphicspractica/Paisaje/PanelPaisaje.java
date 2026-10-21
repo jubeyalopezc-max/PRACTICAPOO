@@ -3,12 +3,25 @@ package graphicspractica.Paisaje;
 import javax.swing.*;
 import java.awt.*;
 
+
+/**
+ * The type Panel paisaje.
+ */
 public class PanelPaisaje extends JPanel {
 
+    /**
+     * The Desplazamiento.
+     */
     int  desplazamiento = 0;
+    /**
+     * The Altura.
+     */
     int altura = 400;
     private Timer timer;
 
+    /**
+     * Animar paisaje.
+     */
     public void animarPaisaje(){
 
         timer = new Timer(50,e -> {
@@ -33,18 +46,35 @@ public class PanelPaisaje extends JPanel {
 
     }
 
+    /**
+     * Se encargade de llamar el timer para empezar animarlo
+     */
     public PanelPaisaje(){animarPaisaje();}
+
+    /**
+     * Se encarga de darle la accion al boton de iniciar
+     */
     public void iniciar(){timer.start();};
+
+    /**
+     * Se encarga de darle la accion al boton de detener
+     */
     public void detener(){timer.stop();};
 
-
+    /**
+     *
+     * @return
+     */
     @Override
     public Dimension getPreferredSize(){
         return new Dimension(900,600);
     }
 
 
-
+    /**
+     *
+     * @param g the <code>Graphics</code> object to protect
+     */
     @Override
     protected void paintComponent(Graphics g){
         super.paintComponent(g);

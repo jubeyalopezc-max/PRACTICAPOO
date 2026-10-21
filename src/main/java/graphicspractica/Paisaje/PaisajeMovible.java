@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The type Paisaje movible.
+ */
 public class PaisajeMovible {
     private JPanel PanelPrincipal;
     private JPanel panelPaisaje;
@@ -11,6 +14,9 @@ public class PaisajeMovible {
     private JButton BtnDetener;
     private JButton BtnIniciar;
 
+    /**
+     *
+     */
     public PaisajeMovible() {
         BtnIniciar.addActionListener(new ActionListener() {
             @Override
@@ -20,7 +26,9 @@ public class PaisajeMovible {
             }
         });
 
-
+        /**
+         *
+         */
         BtnDetener.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -35,6 +43,10 @@ public class PaisajeMovible {
         // TODO: place custom component creation code here
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args){
         JFrame paisaje = new JFrame("Paisaje");
         paisaje.setContentPane(new PaisajeMovible().PanelPrincipal);
